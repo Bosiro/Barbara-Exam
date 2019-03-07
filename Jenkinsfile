@@ -15,7 +15,7 @@ sh "docker build -t bosiro/barbara-exam ."
 }
 
 stage('Docker login to hub and push the image'){
-sh "docker login -u 'bosiro' -p 'Srmartha1218'"
+sh "docker login -u 'bosiro' -p 'Srmartha1218' "
 sh "docker tag exam_2019:latest bosiro/barbara-exam"
 sh "docker push bosiro/barbara-exam"
 }
